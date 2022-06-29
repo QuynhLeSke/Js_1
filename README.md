@@ -1,9 +1,9 @@
 # Js_1
 
-# LIBRARY
+### LIBRARY
 
-## This is a simple project using objects and object constructors that I have learnt in the previous lesson.
+his is a simple project using objects and object constructors that I have learnt in the previous lesson.
 
-## Acknowledgements
+#### Acknowledgements
 
-### localStorage : to keep data in myLibrary stay through page loads
+localStorage : to keep data in myLibrary stay through page loads
