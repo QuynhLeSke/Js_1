@@ -1,6 +1,6 @@
 # Js_1
 
-## LIBRARY
+## Library
 
 This is a simple project using objects and object constructors that I have learnt in the previous lesson.
 
@@ -15,3 +15,9 @@ Tic tac toe project using modules and factory function. But 2 modules gameBoard 
 ##### Difficulty
 
 I think this is a hard case for me, and a good chance to learn how to define needed function, make things work, follow the app logic in JS way.
+
+##### Fix
+
+- 'use strict' --> on fixing
+- Split tic.js into smaller modules with ESM --> on fixing
+- Update href/URL from /vendor to ./vendor --> fixed

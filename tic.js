@@ -1,3 +1,5 @@
+"use strict";
+
 const gameBoard = (() => {
   // Creates players
   const playerFactory = (name, mark, turn) => {
