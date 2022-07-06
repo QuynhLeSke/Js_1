@@ -107,7 +107,10 @@ main {
 }
 .new {
   position: relative;
-  padding: 0 10px 0 10px;
+  padding: 10px 20px 10px 20px;
+  margin-top: var(--sma-size);
+  margin-bottom: var(--sma-size);
+  font-size: var(--sma-size);
 }
 .table {
   width: 1000px;
