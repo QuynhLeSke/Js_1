@@ -21,3 +21,5 @@ I think this is a hard case for me, and a good chance to learn how to define nee
 - 'use strict' --> on fixing
 - Split tic.js into smaller modules with ESM --> on fixing
 - Update href/URL from /vendor to ./vendor --> fixed
+
+## To do list

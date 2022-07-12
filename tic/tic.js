@@ -1,4 +1,4 @@
-// "use strict";
+"use strict";
 
 const gameBoard = (() => {
   // Creates players
@@ -79,7 +79,7 @@ const gameBoard = (() => {
   })();
 
   // Checks for a winner
-  winCheck = () => {
+  const winCheck = () => {
     turns++;
 
     // Seperates each player X | O move into 2 diffrent arrays
@@ -114,7 +114,7 @@ const gameBoard = (() => {
     return winnerCombo;
   };
   // Resets board and display
-  gameReset = () => {
+  const gameReset = () => {
     gameBoard.winner = null;
     gameBoard.winnerCombo = undefined;
     player1.turn = true;
@@ -133,7 +133,7 @@ const displayController = (() => {
   const box = document.querySelectorAll(".box");
   const winCtn = document.querySelector(".win-display");
   // Display winner function
-  winDisplay = () => {
+  const winDisplay = () => {
     // Displays the win combo
     combDisplay = () => {
       for (i = 0; i < gameBoard.winnerCombo.length; i++) {
@@ -159,7 +159,7 @@ const displayController = (() => {
     backBtn.style.display = "flex";
   };
   // Board render
-  gamePlay = () => {
+  const gamePlay = () => {
     winCtn.style.display = "block";
 
     header.style.display = "none";
@@ -172,7 +172,7 @@ const displayController = (() => {
   };
 
   // Resets board and display
-  gameReplay = () => {
+  const gameReplay = () => {
     gameBoard.gameReset();
 
     box.forEach((box) => {
@@ -187,7 +187,7 @@ const displayController = (() => {
   };
 
   // Back to main button
-  mainPage = () => {
+  const mainPage = () => {
     // styling
     boxCtn.style.display = "none";
 
