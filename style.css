@@ -315,3 +315,127 @@ table tr td:last-child {
 }
 
 /*To do list */
+.sidenav {
+  height: 100%;
+  width: 300px;
+  position: fixed;
+  z-index: 1;
+  top: 7%;
+  left: 0;
+  background-color: rgba(169, 92, 54, 0.49);
+  overflow-x: hidden;
+
+}
+.proj-ctn {
+  padding-top: 20px;
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
+  height: fit-content;
+  background-color: #4376e2b9;
+  border-bottom: #000000 1px solid;
+  margin-bottom: 20px;
+}
+.proj-ctn button {
+  font-size: 25px;
+  color: white;
+  display: block;
+  margin: 10px;
+  width: 80%;
+  font-family: "Tenor Sans", sans-serif;
+  background-color: #223f7fd9;
+}
+
+.proj-ctn button:hover {
+  color: white;
+}
+.proj-ctn button:focus  {
+  color: #612d2d;
+  background-color: #90f375c5;
+}
+.proj-ctn button:last-child {
+  margin-bottom: 50px;
+}
+.main {
+  /* margin-left: 160px; */
+  /* Same as the width of the sidenav */
+  font-size: 28px;
+  /* Increased text to enable scrolling */
+  /* padding: 0px 10px; */
+  width: 100%;
+  margin-top: var(--med-size);
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
+  text-align: center;
+}
+.addTodo {
+  margin: 0 auto;
+  font: var(--sm-size);
+  display: block;
+  background-color: rgba(107, 187, 237, 0.924);
+  position: relative;
+  margin-top: var(--med-size);
+  margin-bottom: 40px;
+}
+.proj-name {
+  font-size: 20px;
+  display: block;
+  width: 100%;
+}
+.proj-add button {
+  margin: 10px;
+  padding: 5px 10px 5px 10px;
+  background-color: lightgoldenrodyellow;
+}
+.task-ctn {
+  height: fit-content;
+  width: 60%;
+  display: flex;
+  margin: 0 auto;
+  justify-items: center;
+  align-items: center;
+  cursor: pointer;
+  padding: 5px;
+  position: relative;
+  border-radius: 10px;
+}
+.high {
+  background-color: rgba(216, 59, 59, 0.527);
+}
+.medium {
+  background-color: rgba(101, 216, 59, 0.527);
+}
+.low {
+  background-color: rgba(59, 130, 216, 0.527);
+}
+.task-ctn h3 {
+  font-family:"Tenor Sans", sans-serif;
+  padding-right: var(--sma-size);
+  padding-left: var(--sma-size);
+}
+.task-ctn p {
+  font-size: 25px;
+  width: 40%;
+}
+.task-ctn button {
+  margin-left: 20px ;
+  background-color: lightseagreen;
+}
+.formTask {
+  flex-direction: column;
+  position: relative;
+  margin-top: var(--lg-size);
+  background-color: rgba(107, 187, 237, 0.924);
+  padding: var(--sm-size);
+  border-radius: var(--sma-size);
+  font-family: "Tenor Sans", sans-serif;
+  font-size: var(--sma-size);
+  width: 20%;
+  margin: 0 auto;
+  height: fit-content;
+  border: #000000 2px solid;
+} 
+.show {
+  display: flex;
+}

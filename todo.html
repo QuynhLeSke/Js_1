@@ -12,16 +12,53 @@
         </header>
         <main>
             <img class="img-bg fixed" src="./vendor/todobg.webp" />
-            <div class="container">
-                <div class="left-panel">
-                    <button>Add project</button>
+            <!-- Side navigation -->
+            <div class="sidenav">
+                <div class="proj-ctn" id="proj-ctn">
+                    <button>All</button>
+                    <button>Today</button>
                 </div>
-                <div class="right-panel">
-                    <h2>To do list</h2>
-                    <div class="todo-panel">
-                        <div class="todo">
-                            <h5>Title</h5>
-                        </div>
+                 
+                <button class="addTodo" id="addTodo">Add project</button>
+                <div class="proj-add hidden" id="proj-add">
+                    <input type="text" id="proj-name" class="proj-name" placeholder="Project name..." required>
+                    <button type="submit" id="submit">Add</button>
+                    <button id="cancle" type="reset">Cancle</button> 
+                </div>
+            </div>
+            
+            <!-- Page content -->
+            <div class="main">
+                <div class="task-ctn high">
+                    <input type="checkbox">
+                    <h3 id="titleTask">Title</h3>
+                    <p id="desTask">Short des...</p>
+                    <input type="date" >
+                    <button>Edit/Details</button>
+                    <button>Delete</button>
+                </div>
+                <button class="addTodo" id="addTask">Add task</button>
+                <div class="formTask hidden" id="formTask">
+                    <input type="text" id="title" placeholder="Title" />
+                    <input type="text" id="des" placeholder="Description" />
+                    <input type="date" id="dateTask" required/>
+                    <fieldset role="radiogroup">
+                        <legend>Priority</legend>
+                        <label for="high">
+                            <input type="radio" id="high" name="read" value="high" checked />
+                            <span>High</span>
+                        </label>
+                        <label for="medium">
+                            <input type="radio" id="medium" name="read" value="medium" />
+                            <span>Medium</span>
+                        </label>
+                        <label for="Low">
+                            <input type="radio" id="low" name="read" value="low" />
+                            <span>Low</span>
+                        </label>
+                    </fieldset>
+                    <div class="button-group">
+                        <button id="addNewTask">Submit</button>
                     </div>
                 </div>
             </div>
