@@ -59,6 +59,7 @@ button:hover {
   font-family: "Courgette", cursive;
   font-size: var(--med-size);
   font-weight: var(--med-weight);
+  padding: 15px 0 15px 0;
 }
 .title:hover {
   color: #ff6565;
