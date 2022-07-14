@@ -1,6 +1,5 @@
 "use strict";
-
-const displayProjBar = require("./modules/render");
+import { displayProjBar } from "../todos/modules/render.js";
 
 const projAdd = document.getElementById("proj-add");
 

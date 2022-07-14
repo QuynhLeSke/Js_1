@@ -1,5 +1,7 @@
 # Js_1
 
+## Although TOD introduce webpack to bundle js code, in this project I use Browserify which is easier to use and setting up.
+
 ## Library
 
 This is a simple project using objects and object constructors that I have learnt in the previous lesson.
