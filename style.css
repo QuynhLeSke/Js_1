@@ -320,11 +320,11 @@ table tr td:last-child {
   width: 300px;
   position: fixed;
   z-index: 1;
-  top: 7%;
+  top: 0;
   left: 0;
   background-color: rgba(169, 92, 54, 0.49);
   overflow-x: hidden;
-
+  text-align: center;
 }
 .proj-ctn {
   padding-top: 20px;

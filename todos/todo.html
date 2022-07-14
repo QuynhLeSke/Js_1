@@ -7,23 +7,19 @@
     </head>
 
     <body>
-        <header>
-            <p class="title lib">TO DO LIST</p>
-        </header>
         <main>
+            
             <img class="img-bg fixed" src="../vendor/todobg.webp" />
             <!-- Side navigation -->
             <div class="sidenav">
+                <p class="title">Projects<p>
                 <div class="proj-ctn" id="proj-ctn">
                     <button>All</button>
                     <button>Today</button>
                 </div>
                  
-                <button class="addTodo" id="addTodo">Add project</button>
-                <div class="proj-add hidden" id="proj-add">
-                    <input type="text" id="proj-name" class="proj-name" placeholder="Project name..." required>
-                    <button type="submit" id="submit">Add</button>
-                    <button id="cancle" type="reset">Cancle</button> 
+                <div class="proj-add" id="proj-add">
+                    <input type="text" id="proj-name" class="proj-name" placeholder="Enter to add project..." required>
                 </div>
             </div>
             
@@ -63,6 +59,6 @@
                 </div>
             </div>
         </main>
-        <script src="todo.js"></script>
+        <script type="module" src="todo.js"></script>
     </body>
 </html>
