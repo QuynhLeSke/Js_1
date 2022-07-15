@@ -193,3 +193,13 @@ document.addEventListener("DOMContentLoaded", () => {
 
   updateTable();
 });
+
+window.addEventListener("storage", () => {
+  if (!localStorage.getItem("library")) {
+    populateStorage();
+  } else {
+    getStorage();
+  }
+
+  updateTable();
+});

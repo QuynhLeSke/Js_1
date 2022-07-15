@@ -1,6 +1,4 @@
-# Js_1
-
-## Although TOD introduce webpack to bundle js code, in this project I use Browserify which is easier to use and setting up.
+# Js_1 | TOD Javascript practice
 
 ## Library
 
@@ -9,19 +7,14 @@ This is a simple project using objects and object constructors that I have learn
 ##### Acknowledgements
 
 localStorage : to keep data in myLibrary stay through page loads
+storage event : auto load the second page with the same url
 
 ## Tic tac toe
 
-Tic tac toe project using modules and factory function. But 2 modules gameBoard and displayController can present the game well, so no need Player factory function
+Tic tac toe project using modules and factory function.
 
 ##### Difficulty
 
 I think this is a hard case for me, and a good chance to learn how to define needed function, make things work, follow the app logic in JS way.
-
-##### Fix
-
-- 'use strict' --> on fixing
-- Split tic.js into smaller modules with ESM --> on fixing
-- Update href/URL from /vendor to ./vendor --> fixed
 
 ## To do list
