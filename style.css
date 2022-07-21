@@ -346,7 +346,10 @@ table tr td:last-child {
   font-family: "Tenor Sans", sans-serif;
   background-color: #223f7fd9;
 }
-
+.proj-ctn button a {
+  float: right;
+  position: relative;
+}
 .proj-ctn button:hover {
   color: white;
 }
@@ -384,11 +387,7 @@ table tr td:last-child {
   display: block;
   width: 100%;
 }
-.proj-add button {
-  margin: 10px;
-  padding: 5px 10px 5px 10px;
-  background-color: lightgoldenrodyellow;
-}
+
 .task-ctn {
   height: fit-content;
   width: 60%;
@@ -400,28 +399,46 @@ table tr td:last-child {
   padding: 5px;
   position: relative;
   border-radius: 10px;
+  background-color: rgba(185, 207, 233, 0.681);
 }
-.high {
-  background-color: rgba(216, 59, 59, 0.527);
+.done {
+  opacity: .4;
 }
-.medium {
-  background-color: rgba(101, 216, 59, 0.527);
-}
-.low {
-  background-color: rgba(59, 130, 216, 0.527);
-}
-.task-ctn h3 {
+.task-ctn h4 {
   font-family:"Tenor Sans", sans-serif;
   padding-right: var(--sma-size);
   padding-left: var(--sma-size);
 }
 .task-ctn p {
-  font-size: 25px;
+  font-size: 20px;
   width: 40%;
 }
 .task-ctn button {
-  margin-left: 20px ;
-  background-color: lightseagreen;
+  margin-left: var(--med-size) ;
+  color: rgba(32, 12, 12, 0.811);
+  border: none;
+  font-size: 20px;
+}
+.task-ctn button:focus {
+  background-color: #bd4343;
+}
+.prilow {
+  border-left: green 6px solid;
+}
+.primed {
+  border-left: darkgoldenrod 6px solid;
+}
+.prihigh {
+  border-left: #f34e4ecc 6px solid;
+}
+.low {
+  background-color: green;
+}
+.med {
+  background-color: darkgoldenrod;
+}
+.high {
+  background-color: #f34e4ecc;
 }
 .formTask {
   flex-direction: column;
@@ -439,4 +456,8 @@ table tr td:last-child {
 } 
 .show {
   display: flex;
+}
+.del-icon {
+  width: 25px;
+  height: 25px;
 }
