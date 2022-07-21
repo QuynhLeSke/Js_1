@@ -10,13 +10,12 @@
         <main>
             
             <img class="img-bg fixed" src="../vendor/todobg.webp" />
-            <!-- Side navigation -->
+         
             <div class="sidenav">
                 <p class="title">Projects<p>
                 <div class="proj-ctn" id="proj-ctn">
                     <button>All</button>
                     <button>Today</button>
-                    <button>Done</button>
                 </div>
                  
                 <div class="proj-add" id="proj-add">
@@ -24,9 +23,9 @@
                 </div>
             </div>
             
-            <!-- Page content -->
-            <div class="main">
-                <div class="task-ctn">
+      
+            <div class="main" id="main">
+                <div class="task-ctn hidden">
                     <input type="checkbox">
                     <h4 id="titleTask">Title</h4>
                     <p id="desTask">Short des...</p>
@@ -35,25 +34,16 @@
                     <button>Delete</button>
                 </div>
                 <button class="addTodo" id="addTask">Add task</button>
-                <div class="formTask hidden" id="formTask">
+                <div class="formTask show" id="formTask">
                     <input type="text" id="title" placeholder="Title" />
                     <input type="text" id="des" placeholder="Description" />
                     <input type="date" id="dateTask" required/>
-                    <fieldset role="radiogroup">
-                        <legend>Priority</legend>
-                        <label for="high">
-                            <input type="radio" id="high" name="read" value="high" checked />
-                            <span>High</span>
-                        </label>
-                        <label for="medium">
-                            <input type="radio" id="medium" name="read" value="medium" />
-                            <span>Medium</span>
-                        </label>
-                        <label for="Low">
-                            <input type="radio" id="low" name="read" value="low" />
-                            <span>Low</span>
-                        </label>
-                    </fieldset>
+                    <label for="note-priority">Priority</label>
+                    <select name="priority" id="note-priority">
+                        <option value="0">Low</option>
+                        <option value="1">Medium</option>
+                        <option value="2">High</option>
+                    </select>
                     <div class="button-group">
                         <button id="addNewTask">Submit</button>
                         <button id="cancle" type="reset">Cancle</button>

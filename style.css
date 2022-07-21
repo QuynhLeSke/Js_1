@@ -391,7 +391,6 @@ table tr td:last-child {
 .task-ctn {
   height: fit-content;
   width: 60%;
-  display: flex;
   margin: 0 auto;
   justify-items: center;
   align-items: center;
