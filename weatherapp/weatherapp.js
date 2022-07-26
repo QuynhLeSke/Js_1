@@ -1,3 +1,5 @@
+"use strict";
+
 import { uiManager } from "./uiManager.js";
 import "../node_modules/dotenv/config.js";
 

@@ -1,5 +1,5 @@
+"use strict";
 const uiManager = (function uiManager() {
-  // buffer DOM
   const weatherCard = document.querySelector("div.weather-card");
 
   const errorCard = document.querySelector("div.error-card");

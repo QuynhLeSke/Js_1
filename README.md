@@ -2,7 +2,7 @@
 
 ## Library
 
-This is a simple project using objects and object constructors that I have learnt in the previous lesson.
+Library project using objects and object constructors that I have learnt in the previous lesson.
 
 ##### Acknowledgements
 
@@ -13,8 +13,8 @@ storage event : auto load the second page with the same url
 
 Tic tac toe project using modules and factory function.
 
-##### Difficulty
-
-I think this is a hard case for me, and a good chance to learn how to define needed function, make things work, follow the app logic in JS way.
-
 ## To do list
+
+## Weather app
+
+Weather app project using fetch, async, await to retrieve data from API
