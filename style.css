@@ -206,114 +206,70 @@ input {
 }
 
 /*Tic tac toe */
-#playCtn {
+h2 {
+  position: relative;
+  font-family: "Fugaz One", cursive;
+  color: #0c2250;
+  font-size: var(--med-size);
+} 
+
+
+#board-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  width: 360px;
+  margin: 35px auto 30px auto;
   position: relative;
 }
 
-.btn-ctn-play {
+.board-square {
   display: flex;
-  justify-content: center;
   align-items: center;
-  position: relative;
-  padding-top: var(--med-size);
-
-}
-
-.play-btn {
-  display: flex;
   justify-content: center;
-  align-items: center;
-  text-align: center;
-  font-size: 1.2rem;
-  margin: 0 1em;
+  font-family: "Courgette", cursive;
+  font-size: 100px;
+  width: 120px;
+  height: 120px;
+  line-height: 120px;
+  background-color: rgba(228, 188, 188, 0.611);
 }
 
-.box-ctn {
-  display: none;
-  justify-content: center;
-  border-collapse: collapse;
-  font-size: 2rem;
-  font-weight: var(--med-weight);
-  width: 20em;
-  height: 50%;
-  margin: 0 auto;
-  margin-bottom: 1em;
-  background-color: transparent;
-  border-bottom: none;
+.top,
+.mid {
+  border-bottom: 3px solid #004466;
 }
 
-table tr {
-  font-size: 1.5rem;
-  padding: 1.5em;
+.left,
+.center {
+  border-right: 3px solid #004466;
 }
 
-td {
-  transition: all 0.3s ease-in;
-  -webkit-transition: all 0.3s ease-in;
-  -moz-transition: all 0.3s ease-in;
-  -ms-transition: all 0.3s ease-in;
-  -o-transition: all 0.3s ease-in;
-}
-
-.box {
-  border: 10px rgb(226, 226, 226) solid;
+#restart-game {
+  display: inline-block;
+  background-color: #004466;
+  width: 360px;
+  padding: 15px 35px;
+  margin-top: 20px;
+  border: 4px solid #004466;
+  border-radius: 25px;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: 'Pangolin', sans-serif;
+  font-size: 32px;
   color: white;
-  width: 1.5em;
-  height: 1.5em;
-  font-size: 5rem;
-  text-align: center;
-  cursor: default;
-
+  text-shadow: 0 0.04em 0.04em rgba(0, 0, 0, 0.35);
+  transition: all 0.2s;
+  position: relative;
 }
 
-table tr:first-child td {
-  border-top: 0;
+#restart-game:focus {
+  outline: none;
 }
 
-table tr:last-child td {
-  border-bottom: 0;
+#restart-game:hover {
+  border-color: white;
 }
 
-table tr td:first-child {
-  border-left: 0;
-}
-
-table tr td:last-child {
-  border-right: 0;
-}
-
-.win-display {
-  text-align: center;
-  font-size: 2.8rem;
-  font-weight: 900;
-  color: rgb(36, 48, 85);
-  font-family: "Tenor Sans", sans-serif;
-}
-
-.btn-ctn {
-  display: flex;
-  justify-content: center;
-  margin: 3em;
-
-}
-
-.replay-btn {
-  display: none;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  font-size: 1.5rem;
-  margin: 0 0.5em;
-}
-
-.back-btn {
-  display: none;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  font-size: 1.5rem;
-  margin: 0 0.5em;
-}
 
 /*To do list */
 .sidenav {
