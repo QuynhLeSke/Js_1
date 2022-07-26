@@ -1,4 +1,5 @@
 import { uiManager } from "./uiManager.js";
+import "../node_modules/dotenv/config.js";
 
 const searchBar = document.querySelector("input");
 const form = document.querySelector("form");
@@ -28,16 +29,14 @@ class WeatherObject {
 }
 
 async function makeApiCall(cityName) {
-  const apiKey = "7fdbc7aa6a75a22aa698b65b12ba530c";
-
   const metricResponse = await fetch(
-    `https://api.openweathermap.org/data/2.5/weather?q=${cityName}&appid=${apiKey}&units=metric`,
+    `https://api.openweathermap.org/data/2.5/weather?q=${cityName}&appid=${process.env.SECRET_API_KEY}&units=metric`,
     { mode: "cors" }
   );
   const metricData = await metricResponse.json();
 
   const imperialResponse = await fetch(
-    `https://api.openweathermap.org/data/2.5/weather?q=${cityName}&appid=${apiKey}&units=imperial`,
+    `https://api.openweathermap.org/data/2.5/weather?q=${cityName}&appid=${process.env.SECRET_API_KEY}&units=imperial`,
     { mode: "cors" }
   );
   const imperialData = await imperialResponse.json();
