@@ -1,44 +1,5 @@
 "use strict";
 
-export const displayProjBar = (project) => {
-  // const projName = document.getElementById("proj-name");
-  // const projCtn = document.getElementById("proj-ctn");
-
-  // projName.addEventListener("keypress", (e) => {
-  //   if (e.key == "Enter" && e.target.value) {
-  //     e.preventDefault();
-  //     const newProj = document.createElement("button");
-  //     const delicon = document.createElement("a");
-  //     const delimg = document.createElement("img");
-
-  //     delicon.setAttribute("href", "#");
-  //     delimg.setAttribute("src", "../vendor/del-icon.png");
-  //     delimg.classList.add("del-icon");
-
-  //     newProj.textContent = e.target.value;
-  //     newProj.appendChild(delicon);
-  //     delicon.appendChild(delimg);
-  //     projCtn.appendChild(newProj);
-
-  //     e.target.value = "";
-  //   }
-  // });
-  const newProj = document.createElement("button");
-  const delicon = document.createElement("a");
-  const delimg = document.createElement("img");
-
-  delicon.setAttribute("href", "#");
-  delimg.setAttribute("src", "../vendor/del-icon.png");
-  delimg.classList.add("del-icon");
-
-  newProj.textContent = project.name;
-  newProj.appendChild(delicon);
-  delicon.appendChild(delimg);
-  // projCtn.appendChild(newProj);
-
-  return newProj;
-};
-
 export const displayTaskBar = (task) => {
   const taskCtn = document.createElement("div");
   const colorBoder =
