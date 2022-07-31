@@ -6,8 +6,8 @@ Library project using objects and object constructors that I have learnt in the 
 
 ##### Acknowledgements
 
-localStorage : to keep data in myLibrary stay through page loads
-storage event : auto load the second page with the same url
+-- localStorage : to keep data in myLibrary stay through page loads
+-- storage event : auto load the second page with the same url
 
 ## Tic tac toe
 
